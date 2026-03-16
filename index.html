@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<meta property="og:title" content="片柳棒高跳びクラブ 練習施設火災復旧支援プロジェクト">
+<meta property="og:description" content="火災で被害を受けた練習施設の復旧支援サイトです。支援状況や物品支援、資金使用状況を公開しています。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://katayanagi-pj-club.github.io/support/">
+<meta property="og:image" content="https://katayanagi-pj-club.github.io/support/after.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<title>
+片柳棒高跳びクラブ 練習施設火災復旧支援プロジェクト
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<div id="popup" class="popup hidden">
+<div class="popup-box">
+
+<span id="popup-close">×</span>
+
+<strong>お知らせ</strong>
+<p id="popup-text"></p>
+
+</div>
+</div>
+
+
+
+<header>
+<h1 class="title">
+片柳棒高跳びクラブ<br>
+<span class="subtitle">練習施設火災復旧支援プロジェクト</span>
+</h1>
+
+<nav class="menu">
+
+<a href="#fire">火災の経緯</a>
+<a href="#support">支援方法</a>
+<a href="#status">支援状況</a>
+<a href="#items-section">物品支援状況</a>
+<a href="#usage">支援金用途</a>
+<a href="#blog">近況報告</a>
+<a href="#supporters-section">支援者一覧</a>
+<a href="#news-section">お知らせ</a>
+<a href="#contact">問い合わせ</a>
+
+</nav>
+
+</header>
+
+
+
+<section id="fire">
+
+<h2>火災の経緯</h2>
+
+<p>
+放火により片柳棒高跳クラブの練習施設が焼失しました。  
+子どもたちの練習環境を取り戻すため、皆様のご支援をお願いいたします。
+</p>
+
+<div class="photo">
+
+<img src="before.jpg">
+<img src="after.jpg">
+
+</div>
+
+</section>
+
+
+
+<section id="support">
+
+<h2>支援方法</h2>
+
+<div class="support-buttons">
+
+<a href="transfer.pdf" target="_blank">振込方法</a>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdN2FVP2Wx-TYMHCclPRV5wJGy9uUZg5lYN_qSc4N9WfyRc9w/viewform?usp=header" target="_blank">
+振込報告フォーム
+</a>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdY7RNuRFi6QuEQM3_dItRD4eS4aHBPXs1JwPpShY3aLTQx7w/viewform?usp=header" target="_blank">
+物品支援フォーム
+</a>
+
+</div>
+
+</section>
+
+
+
+<section id="status">
+
+<h2>支援状況</h2>
+
+<div class="money-box">
+
+<div id="target"></div>
+<div id="total"></div>
+<div id="rate"></div>
+<div id="support-count"></div>
+
+<canvas id="money-chart"></canvas>
+
+</div>
+
+</section>
+
+
+
+<section id="items-section">
+
+<h2>物品支援状況</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>物品名</th>
+<th>支援数</th>
+<th>購入数</th>
+<th>合計</th>
+</tr>
+</thead>
+
+<tbody id="items"></tbody>
+
+</table>
+
+</section>
+
+
+
+<section id="usage">
+
+<h2>支援金使用用途</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>購入日</th>
+<th>購入品名</th>
+<th>用途</th>
+<th>金額</th>
+</tr>
+</thead>
+
+<tbody id="uses"></tbody>
+
+</table>
+
+</section>
+
+
+
+<section id="blog">
+
+<h2>近況報告</h2>
+
+<a class="blog-button"
+href="https://ameblo.jp/katayanagiclub/"
+target="_blank">
+
+アメーバブログを見る
+
+</a>
+
+</section>
+
+
+
+<section id="supporters-section">
+
+<h2>支援者一覧</h2>
+
+<ul id="supporters"></ul>
+
+</section>
+
+
+
+<section id="news-section">
+
+<h2>お知らせ</h2>
+
+<ul id="news"></ul>
+
+</section>
+
+
+
+<section id="contact">
+
+<h2>問い合わせ</h2>
+
+<a class="contact"
+href="https://docs.google.com/forms/d/e/1FAIpQLSfk6ss4MsrH1eNBxvBHJbDpi39wMJVkW9OnQ0sYGN6qw8Cd5g/viewform?usp=header"
+target="_blank">
+
+問い合わせフォーム
+
+</a>
+
+</section>
+
+
+
+<footer>
+片柳棒高跳びクラブ
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
