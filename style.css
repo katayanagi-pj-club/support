@@ -47,11 +47,10 @@ border-radius:10px;
 .photo{
 display:flex;
 gap:20px;
-flex-wrap:wrap;
 }
 
 .photo-item{
-width:45%;
+flex:1;
 text-align:center;
 }
 
