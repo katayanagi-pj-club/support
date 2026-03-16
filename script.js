@@ -55,7 +55,7 @@ position:"bottom"
 
 let s=""
 data.supporters.forEach(n=>{
-s+="<li>"+n+"様</li>"
+s+="<li>"+n+" 様</li>"
 })
 document.getElementById("supporters").innerHTML=s
 
