@@ -128,4 +128,21 @@ document.getElementById("popup-close").onclick=()=>{
 document.getElementById("popup").classList.add("hidden")
 }
 
+  function checkScrollHint(){
+  const wrap = document.querySelector('.table-wrap');
+  const hint = document.querySelector('.scroll-hint');
+
+  if (wrap && hint) {
+    if (wrap.scrollWidth > wrap.clientWidth) {
+      hint.style.display = 'block';
+    } else {
+      hint.style.display = 'none';
+    }
+  }
+}
+
+checkScrollHint();
+window.addEventListener('resize', checkScrollHint);
+  
 })
+
