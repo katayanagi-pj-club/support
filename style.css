@@ -131,3 +131,15 @@ footer{
 text-align:center;
 padding:20px;
 }
+
+.table-wrap{
+overflow-x:auto;
+-webkit-overflow-scrolling:touch;
+}
+
+.representative{
+display:block;
+margin-top:8px;
+font-size:14px;
+color:#ccc;
+}
